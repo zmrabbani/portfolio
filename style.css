@@ -32,10 +32,10 @@ section::before {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
-#img {
+/* #img {
     height: 300px;
     width: 300px;
-}
+} */
 
 .home h1 {
     font-size: 64px;
@@ -43,6 +43,10 @@ section::before {
 
 .home h3 {
     font-size: 48px;
+}
+
+.home img {
+    width: 80%;
 }
 
 .home .arrow img{
@@ -150,6 +154,20 @@ section::before {
 
 .form-label {
     font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+        padding-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: 8px;
+        font-size: 64px;
+    }
 }
 
 @keyframes upDown {
