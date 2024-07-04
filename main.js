@@ -35,3 +35,13 @@ function onFormSubmit(e) {
         $(message).val("") 
     }
 }
+
+// var imageElement = document.getElementById('kasya-1');
+
+// // Get the image source from the element
+// var imageUrl = imageElement.src;
+
+// // Add click event to open the image in a new tab
+// imageElement.onclick = function() {
+//     window.open(imageUrl, '_blank');
+// };

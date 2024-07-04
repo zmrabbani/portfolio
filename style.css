@@ -15,6 +15,10 @@ section::before {
     left: -30px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .btn.button {
     border: 3px solid black;
     border-radius: 32px;
@@ -57,6 +61,10 @@ section::before {
     animation: 2s upDown infinite;
 }
 
+.title {
+    padding-top: 64px;
+}
+
 .about::before{
     content: 'About';
 }
@@ -75,26 +83,31 @@ section::before {
     display: none;
 }
 
-.work::before {
-    content: 'Work';
+.project::before {
+    content: 'Projects';
 }
 
-.work-img {
+.project-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "work-1 work-2" "work-3 work-3";
     gap: 16px;
 }
 
-.work-img img{
+.project-img img{
     width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; 
+    object-position: center; 
 }
 
-.work-img-item {
+.project-img-item {
     position: relative;
 }
 
-.work-img-item:hover:after {
+.project-img-item:hover:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -109,36 +122,177 @@ section::before {
     font-weight: 500;
     font-size: 24px;
 }
-
-#work-1{
+/* GAMBAR SAVI */
+#savi-1{
     grid-area: work-1;
 }
 
-#work-1:hover:after {
-    content: 'Web Project';
+#savi-1:hover:after {
+    content: 'Main Body of Robot';
 }
 
-#work-2{
+#savi-2{
     grid-area: work-2;
 }
 
-#work-2:hover:after {
-    content: 'Web Project';
+#savi-2:hover:after {
+    content: 'Savi Logo';
 }
 
-#work-3{
+#savi-3{
     grid-area: work-3;
 }
 
-#work-3:hover:after {
-    content: 'Web Project';
+#savi-3:hover:after {
+    content: 'User Interface';
+}
+/* GAMBAR SAVI */
+
+/* GAMBAR KASYA */
+#kasya-1{
+    grid-area: work-1;
+}
+
+#kasya-1:hover:after {
+    content: 'Home of Web';
+}
+
+#kasya-2{
+    grid-area: work-2;
+}
+
+#kasya-2:hover:after {
+    content: 'Description';
+}
+
+#kasya-3{
+    grid-area: work-3;
+}
+
+#kasya-3:hover:after {
+    content: 'Hand Recognition';
+}
+/* GAMBAR KASYA */
+
+/* GAMBAR ECOMMERCE */
+#ec-1{
+    grid-area: work-1;
+}
+
+#ec-1:hover:after {
+    content: 'Product Catalog';
+}
+
+#ec-2{
+    grid-area: work-2;
+}
+
+#ec-2:hover:after {
+    content: 'Database';
+}
+
+#ec-3{
+    grid-area: work-3;
+}
+
+#ec-3:hover:after {
+    content: 'Cart';
+}
+/* GAMBAR ECOMMERCE */
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-header h1{
+    position: relative;
+}
+
+.project-header h1::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(images/accent2.svg);
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+}
+
+.project-detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+}
+
+.project-detail a {
+    text-decoration: none;
+}
+
+.project-detail-item {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.project-detail-item img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.project-detail-item:hover {
+    transform: scale(1.1);
+}
+
+.project-detail-item:hover img {
+    filter: grayscale(0);
+}
+
+.project-detail-item h2 {
+    padding: 0 16px;
+    color: black;
+}
+
+.project-detail-item p {
+    font-size: 16px;
+    padding: 0 16px 32px 16px;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.image-container {
+    margin-bottom: 24px;
+    height: 300px; 
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
 }
 
 .contact {
-    padding-bottom: 128px;
+    padding-top: 184px;
+    padding-bottom: 72px;
+}
+
+.contact h2 {
+    margin-bottom: 16px;
+}
+
+.contact p {
+    color: black;
 }
 
 .contact::before {
+    padding-top: 48px;
     content: 'Contact';
 }
 
@@ -154,6 +308,39 @@ section::before {
 
 .form-label {
     font-weight: 700;
+}
+
+.article {
+    padding-top: 64px;
+}
+
+.demo {
+    display: flex;
+    padding-top: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_project {
+    padding-top: 48px;
+}
+
+footer {
+    padding: 16px 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: black;
+    width: 100%;
+}
+
+.copyright {
+    color: black;
+    display: flex;
+    /* gap: 32px; */
 }
 
 @media only screen and (max-width: 768px) {
