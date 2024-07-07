@@ -314,6 +314,37 @@ a {
     padding-top: 64px;
 }
 
+.article p {
+    text-align: justify;
+}
+
+.sys{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.ds {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.cp {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
 .demo {
     display: flex;
     padding-top: 16px;
