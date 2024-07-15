@@ -36,12 +36,13 @@ function onFormSubmit(e) {
     }
 }
 
-// var imageElement = document.getElementById('kasya-1');
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll("nav ul li a");
 
-// // Get the image source from the element
-// var imageUrl = imageElement.src;
-
-// // Add click event to open the image in a new tab
-// imageElement.onclick = function() {
-//     window.open(imageUrl, '_blank');
-// };
+    links.forEach(link => {
+        link.addEventListener("click", function() {
+            links.forEach(link => link.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+});

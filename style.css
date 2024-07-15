@@ -1,28 +1,33 @@
 * {
     font-family: "oswald";
+    box-sizing: border-box;
     /* background-color: #888888; */
 }
 
-/* body {
-    background-image: url(images/ecommerce/messageImage_1720080196118.jpg);
-} */
+body {
+    background-color: white;
+}
 
 section {
-    padding-top: 128px;
-    margin-bottom: 32px;
+    /* padding-top: 128px;
+    margin-bottom: 32px; */
     position: relative;
 }
 
-section::before {
+.judul {
     z-index: -1;
-    content: '';
     font-size: 72px;
-    color: rgb(0, 0, 0);
+    font-style: italic;
+    color: rgb(255, 255, 255);
     /* opacity: 0.25; */
     position: absolute;
     font-weight: 700;
     top: 20px;
     left: -30px;
+    background: url(images/accent1.svg);
+    width: 60px;
+    height: 60px;
+
 }
 
 a {
@@ -43,7 +48,7 @@ a {
 
 .navbar {
     background-color: white;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
     font-style: italic;
     font-size: larger;
     display: flex;
@@ -52,10 +57,25 @@ a {
     z-index: 5;
 }
 
-/* #img {
-    height: 300px;
-    width: 300px;
-} */
+.navbar-custom {
+    background-color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+nav ul li a.active + .indicator,
+nav ul li a:hover + .indicator {
+    height: 5px;
+    width: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -4px;
+}
 
 .line {
     position: absolute;
@@ -99,6 +119,23 @@ a {
 #home {
     /* background-image: url(images/ecommerce/messageImage_1720080196118.jpg); */
     animation: bounceIn 1s;
+    padding-top: 128px;
+    margin-bottom: 72px;
+}
+
+.home::before {
+    content: '';
+    background: url(images/Asset\ 7@2x.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 98.95vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateX(-50%);
 }
 
 .home h1 {
@@ -112,7 +149,7 @@ a {
 }
 
 .home p {
-    color: #888888;
+    color: #353535;
 }
 
 .home img {
@@ -135,19 +172,59 @@ a {
     font-style: italic;
 }
 
+/* .title p {
+    color: #353535;
+} */
+
+#about {
+    padding-top: 128px;
+    padding-bottom: 24px;
+    /* margin-bottom: 32px; */
+    position: relative;
+    z-index: 1;
+}
+
+#about .btn.button {
+    border: 3px solid white;
+    border-radius: 32px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+}
+
+#about .btn.button:hover, #about .btn.button.active {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.about {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
 .about::before{
-    content: 'About';
-    font-style: italic;
-    width: 60px;
-    height: 60px;
-    background: url(images/accent2.svg);
+    content: '';
     position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 98.95vw;
+    height: 100%;
+    background-color: black;
     z-index: -1;
+    transform: translateX(-50%);
 }
 
 .about p {
     text-align: justify;
     color: #888888;
+}
+
+.about h4 {
+    color: white;
 }
 
 .about > p {
@@ -168,15 +245,39 @@ a {
     display: none;
 }
 
-.project::before {
-    content: 'Projects';
-    font-style: italic;
-    width: 60px;
-    height: 60px;
-    background: url(images/accent1.svg);
-    position: absolute;
-    z-index: -1;
+#project {
+    padding-top: 128px;
+    padding-bottom: 40px;
 }
+
+.project::before {
+    content: '';
+    /* font-style: italic; */
+    /* width: 60px;
+    height: 60px; */
+    /* background: url(images/Asset\ 7@2x.png); */
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    /* color: rgb(255, 255, 255); */
+    background-color: #ffffff;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 98.95vw;
+    height: 100%;
+    /* background-color: black; */
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.project h1 {
+    background: url(images/accent2.svg);
+}
+
+/* #project h1 {
+    color: black;
+} */
 
 .project-img {
     display: grid;
@@ -298,18 +399,8 @@ a {
 }
 
 .project-header h1{
-    position: relative;
-}
-
-.project-header h1::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background: url(images/accent2.svg);
-    position: absolute;
-    left: -20px;
-    top: -10px;
-    z-index: -1;
+    /* position: relative; */
+    color: black;
 }
 
 .project-header h5 {
@@ -376,28 +467,40 @@ a {
     object-position: center; 
 }
 
-.contact {
-    padding-top: 184px;
-    padding-bottom: 72px;
+#contact {
+    padding-top: 128px;
+    padding-bottom: 48px;
+}
+
+.contact h1 {
+    background: url(images/accent3.svg);
 }
 
 .contact h2 {
     margin-bottom: 16px;
+    color: #888888;
 }
 
 .contact p {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-.contact::before {
-    /* padding-top: 48px; */
-    content: 'Contact';
-    font-style: italic;
-    width: 60px;
-    height: 60px;
-    background: url(images/accent3.svg);
+.contact::before{
+    content: '';
     position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 98.95vw;
+    height: 100%;
+    background-color: black;
     z-index: -1;
+    transform: translateX(-50%);
+}
+
+.contact img {
+    width: 55px;
 }
 
 .contact-form {
@@ -464,28 +567,58 @@ a {
     text-align: center;
 }
 
-footer {
-    padding: 16px 128px;
+#footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.footer h1 {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
+
+.footer p {
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.copyright {
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: fit-content;
+}
+
+#footer-pro {
+    padding-top: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
 }
 
-footer h1 {
-    font-size: 36px;
-    color: white;
+#footer-pro .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer p {
+#footer-pro h1 {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+#footer-pro p {
     color: rgb(255, 255, 255);
     width: 100%;
 }
 
-.copyright {
+#copyright-pro {
     color: rgb(255, 255, 255);
     display: flex;
-    /* gap: 32px; */
+    height: fit-content;
 }
 
 @keyframes bounceIn {
@@ -565,7 +698,7 @@ footer p {
 }
 
 @media only screen and (max-width: 613px) {
-    section::before {
+    .judul {
         left: 8px;
         font-size: 64px;
     }

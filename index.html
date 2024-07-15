@@ -12,38 +12,41 @@
     <link rel="shortcut icon" href="images/polos.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a class="navbar-brand fs-4 fw-bold" href="#home">ZMR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto fw-bolder">
-                <li class="nav-item px-2">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li> 
-            </ul>
+                <ul class="navbar-nav ms-auto fw-bolder">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <div class="indicator"></div>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#about">About</a>
+                        <div class="indicator"></div>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#project">Projects</a>
+                        <div class="indicator"></div>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <div class="indicator"></div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>
+    </nav>    
     
     <!-- <div class="line"></div>
     <div class="line2"></div> -->
     <section id="home" class="home container">
         <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
             <!-- <div class="box"></div>  -->
-            <div class="col-12 col-md-8">
-                   
+            <div class="col-12 col-md-8">  
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Zaki Maulana Rabbani</h1>
                 <p class="fs-5 fw-medium">I am Into Web Develop and Artificial Intelligence</p>
@@ -62,7 +65,10 @@
         </a>
     </section>
     
+    <!-- <div class="black"></div> -->
     <section id="about" class="about container">
+        <h1 class="judul">About</h1>
+        <!-- <img src="images/Asset 7@2x.png" alt=""> -->
         <p>I hold a Bachelor of Electrical Engineering from Universitas Padjadjaran. I have a strong interest in Artificial Intelligence and website development. Proficient in Python, AI development, and basic tools for website development. I have experience as a laboratory assistant and have worked on projects as an AI engineer and UI developer.</p>  
         <div id="about-exp">
             <div class="about-exp-item">
@@ -117,6 +123,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section id="project" class="project container">
@@ -138,7 +145,8 @@
         </div> -->
         <div class="project-header">
             <div>
-            <h5>I have worked on several projects related to web development and artificial intelligence</h5>
+                <h1 class="judul">Projects</h1>
+                <h5>I have worked on several projects related to web development and artificial intelligence</h5>
             </div>
             <a href="/portfolio/all_projects.html" class="btn button">See More</a>
         </div>
@@ -164,12 +172,13 @@
     </section>
 
     <section id="contact" class="contact container">
+        <h1 class="judul">Contact</h1>
         <div class="row d-flex align-items-center gap-5">
             <div class="col-12 col-lg-7">
                 <h2>Let's have a talk!</h2>
                 <div class="row contact-detail">
-                    <a class="col-12 col-sm-4 d-flex align-items-center" href="https://www.linkedin.com/in/zaki-maulana-rabbani-07567b198/">
-                        <img class="lk w-17 w-sm-25" src="images/linkedin.svg" alt="linkedin icon">
+                    <a class="lk col-12 col-sm-4 d-flex align-items-center" href="https://www.linkedin.com/in/zaki-maulana-rabbani-07567b198/">
+                        <img class="w-17 w-sm-25" src="images/linkedin.svg" alt="linkedin icon">
                         <p class="mb-0 ms-3 ms-sm-2">Zaki Maulana Rabbani</p>
                     </a>
                     <a class="ig col-12 col-sm-4 d-flex align-items-center" href="https://www.instagram.com/zmrabbani/">
@@ -204,7 +213,7 @@
         </div>
     </section>
 
-    <footer id="footer">
+    <footer id="footer" class="footer container">
         <div>
             <h1>ZMR</h1>
         </div>
