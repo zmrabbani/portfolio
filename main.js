@@ -46,3 +46,37 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// TEST
+const slideshow = document.querySelector('.slideshow');
+const slides = document.querySelectorAll('.slide');
+
+const totalSlides = slides.length;
+let slideIndex = 0;
+
+function duplicateSlides() {
+    // Duplicate all slides to create an infinite loop effect
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        slideshow.appendChild(clone);
+    });
+}
+
+function showSlides() {
+    slideIndex++;
+    slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
+    
+    if (slideIndex >= totalSlides) {
+        setTimeout(() => {
+            slideshow.style.transition = 'none';
+            slideIndex = 0;
+            slideshow.style.transform = `translateX(0)`;
+            setTimeout(() => {
+                slideshow.style.transition = 'transform 0.5s ease-in-out';
+            }, 50);
+        }, 500); // Match the transition duration
+    }
+}
+
+duplicateSlides();
+setInterval(showSlides, 3000); // Ganti gambar setiap 3 detik
