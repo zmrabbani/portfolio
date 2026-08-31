@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/polos.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/zmr_white.png" type="image/x-icon">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a class="navbar-brand fs-4 fw-bold" href="#home">ZMR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,298 +43,335 @@
                 </ul>
             </div>
         </div>
-    </nav>    
-    
-    <section id="home" class="home container">
-        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
-            <!-- <div class="box"></div>  -->
-            <div class="col-12 col-md-8">  
-                <h3 class="fw-semibold">Hi! I am</h3>
-                <h1 class="fw-bold">Zaki Maulana Rabbani</h1>
-                <p class="fs-5 fw-medium">I am Into Web Development and Artificial Intelligence</p>
-                <a class="btn button me-2" href="Resume_Zaki Maulana Rabbani_3.pdf" download>Resume</a>
-                <a class="btn button" href="https://github.com/zmrabbani" target="_blank">Github</a>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+                <!-- <div class="box"></div>  -->
+                <div class="col-12 col-md-8">
+                    <h3 class="fw-semibold">Hi! I am</h3>
+                    <h1 class="fw-bold">Zaki Maulana Rabbani</h1>
+                    <p class="fs-5 fw-medium">I am Into Web Development and Artificial Intelligence</p>
+                    <a class="btn button me-2" href="Resume_Zaki Maulana Rabbani_2026.pdf" download>Resume</a>
+                    <a class="btn button" href="https://github.com/zmrabbani" target="_blank">Github</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-md-center justify-content-center">
+                    <img src="images/Asset 4@2x.png" alt="potrait">
+                    <!-- <img class="asset2" src="images/Asset 3.png" alt=""> -->
+                </div>
             </div>
-            <div class="col-12 col-md-4 d-flex justify-content-md-center justify-content-center">
-                <img src="images/Asset 4@2x.png" alt="potrait">
-                <!-- <img class="asset2" src="images/Asset 3.png" alt=""> -->
-            </div>
+            <a class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5" href="#about">
+                <div class="more-info text-dark">More Info</div>
+                <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
+            </a>
         </div>
-        <a class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5" href="#about">
-            <div class="more-info text-dark">More Info</div>
-            <img
-            id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
-        </a>
     </section>
-    
+
     <!-- <div class="black"></div> -->
-    <section id="about" class="about container">
-        <h1 class="judul">About</h1>
-        <p>I hold a Bachelor of Electrical Engineering from Universitas Padjadjaran. I have a strong interest in Artificial Intelligence and website development. Proficient in Python, AI development, and basic tools for website development. I have experience as a laboratory assistant and have worked on projects as an AI engineer and UI developer.</p>  
-        <div id="about-exp">
-            <div class="about-exp-item">
-                <div class="about-exp-item-header">
-                    <div>
-                        <h4>Education</h4>
+    <section id="about" class="about">
+        <div class="container position-relative">
+            <h1 class="judul">About</h1>
+            <p>I hold a Bachelor of Electrical Engineering from Universitas Padjadjaran. I have a strong interest in
+                Artificial Intelligence and website development. Proficient in Python, AI development, and website
+                development. I have experience as a laboratory assistant and have worked on projects as an AI
+                engineer and UI developer. Currently, I am serving as a Civil Servant at the Ministry of Cooperatives of
+                the
+                Republic of Indonesia as a Frontend Developer.</p>
+            <div id="about-exp">
+                <div class="about-exp-item">
+                    <div class="about-exp-item-header">
+                        <div>
+                            <h4>Education</h4>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
                     </div>
-                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>    
+                    <div class="about-exp-item-detail">
+                        <hr>
+                        <h5>Universitas Padjadjaran – Sumedang, Indonesia (August 2019 – March 2024)</h5>
+                        <h6>Bachelor of Electrical Engineering</h6>
+                        <p>▪ Final GPA: 3.68/4.00</p>
+                        <p>▪ Active in organizations and committees at association, faculty, and university levels.</p>
+                    </div>
                 </div>
-                <div class="about-exp-item-detail">
-                    <hr>
-                    <h5>Universitas Padjadjaran (2019-2024)</h5>
-                    <p>▪ Final GPA: 3.68/4.00</p>
-                    <p>▪ Active in organizations and committees at association, faculty, and university levels.</p>
+                <div class="about-exp-item">
+                    <div class="about-exp-item-header">
+                        <div>
+                            <h4>Experience</h4>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                    </div>
+                    <div class="about-exp-item-detail">
+                        <hr>
+                        <h5>Kementerian Koperasi Republik Indonesia – Jakarta, Indonesia</h5>
+                        <h6>Civil Servant (PNS) | June 2026 – Present</h6>
+                        <p>▪ Working under the Assistant Deputy for Digitalization to modernize Indonesia's cooperative
+                            ecosystem.</p>
+                        <p>▪ My role primarily focuses on Frontend Development, where I build responsive web platforms
+                            to
+                            improve cooperative systems.</p>
+                        <p>▪ Manage departmental administration and execute strategic directives from leadership to
+                            support
+                            the ministry's digital initiatives and operational efficiency.</p>
+                        <br>
+                        <h6>Civil Servant Candidate (CPNS) | June 2025 – June 2026</h6>
+                        <p>▪ Assist in completing all tasks assigned by direct superiors as part of learning and
+                            familiarization with tasks and functions in all work units of the Ministry of Cooperatives.
+                        </p>
+                        <p>▪ Attend internal training or modules to improve capabilities.</p>
+                        <hr>
+                        <h5>PT. Syergie Indo Prima – Bandung, Indonesia (January 2022 – March 2022)</h5>
+                        <h6>Research Intern</h6>
+                        <p>▪ Design and develop a prototype for Fast Fourier Transform-based distance relay protection
+                            system for power transmission simulation using Matlab/Simulink.</p>
+                        <p>▪ Learned basic program of FPGA.</p>
+                        <hr>
+                        <h5>Universitas Padjadjaran – Sumedang, Indonesia</h5>
+                        <h6>Laboratory Assistant of Digital Electronics (February 2021 – June 2021)</h6>
+                        <p>▪ Mentored and guide six students in practicum about the basics of logic gates and making
+                            circuits.</p>
+                        <p>▪ Prepare quizzes for practicum participants and assess practicum results reports.</p>
+                        <br>
+                        <h6>Laboratory Assistant of Basic Electrical Engineering (October 2020 – December 2020)</h6>
+                        <p>▪ Mentored and guide five students in practicum with about 7+ modules using MultiSIM
+                            software.
+                        </p>
+                        <p>▪ Prepare quizzes for practicum participants and evaluate results reports.</p>
+                    </div>
+                </div>
+                <div class="about-exp-item">
+                    <div class="about-exp-item-header">
+                        <div>
+                            <h4>Projects</h4>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                    </div>
+                    <div class="about-exp-item-detail">
+                        <hr>
+                        <h5>Simkopdes (Sistem Manejemen KDKMP) Project – Jakarta, Indonesia (November 2025 – Present)
+                        </h5>
+                        <h6>Frontend Developer</h6>
+                        <p>▪ Simkopdes (Sistem Manejemen KDKMP) is a centralized digital platform designed to streamline
+                            administration, financial operations, and membership management for village-level
+                            cooperatives.
+                        </p>
+                        <p>▪ Developed and maintained responsive, user-friendly frontend interfaces for the Simkopdes
+                            web
+                            platform.</p>
+                        <p>▪ Integrated APIs with frontend components to enable real-time data processing and seamless
+                            user
+                            workflows.</p>
+                        <hr>
+                        <h5>SAVI Robot Project – Sumedang, Indonesia (May 2022 – January 2024)</h5>
+                        <h6>AI Engineer & UI Developer</h6>
+                        <p>▪ The SAVI (smart vehicle) robot is a robot that can navigate and help humans carry items.
+                        </p>
+                        <p>▪ Help develop the design and electrical circuit of the robot.</p>
+                        <p>▪ Responsible for developing manual control with hand gestures and human-following using an
+                            AI-based camera.</p>
+                        <p>▪ Developing a user interface website for deploying the AI model and controlling the system.
+                        </p>
+                        <hr>
+                        <h5>Kasya (Kata Isyarat) Project – Online (October 2022 – December 2022)</h5>
+                        <h6>AI Engineer</h6>
+                        <p>▪ Kasya (kata isyarat) is a project to develop software AI for translating Indonesian sign
+                            language (Bisindo) in real-time.</p>
+                        <p>▪ Responsible for developing an AI model using a pre-train model for recognizing the sign
+                            language, creating datasets, and deploying on the website.</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-exp-item">
-                <div class="about-exp-item-header">
-                    <div>
-                        <h4>Experience</h4>
-                    </div>
-                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>    
-                </div>
-                <div class="about-exp-item-detail">
-                    <hr>
-                    <h5>Kementerian Koperasi Republik Indonesia – Jakarta, Indonesia (2025 - Present)</h5>
-                    <h6>CPNS</h6>
-                    <p>▪ Assist in completing all tasks assigned by direct superiors as part of learning and familiarization with tasks and functions in all work units of the Ministry of Cooperatives.</p>
-                    <p>▪ Attend internal training or modules to improve capabilities.</p>
-                </div>
-                <div class="about-exp-item-detail">
-                    <hr>
-                    <h5>PT. Syergie Indo Prima – Bandung, Indonesia (2022)</h5>
-                    <h6>Research Intern</h6>
-                    <p>▪ Design and develop a prototype for Fast Fourier Transform-based distance relay protection system for power transmission simulation using Matlab/Simulink.</p>
-                    <p>▪ Learned basic program of FPGA.</p>
-                </div>
-            </div>
-            <div class="about-exp-item">
-                <div class="about-exp-item-header">
-                    <div>
-                        <h4>Projects</h4>
-                    </div>
-                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>    
-                </div>
-                <div class="about-exp-item-detail">
-                    <hr>
-                    <h5>SAVI Robot Project – Sumedang, Indonesia (2022-2024)</h5>
-                    <h6>AI Engineer & UI Developer</h6>
-                    <p>▪ The SAVI (smart vehicle) robot is a robot that can navigate and help humans carry items.</p>
-                    <p>▪ Help develop the design and electrical circuit of the robot.</p>
-                    <p>▪ Responsible for developing manual control with hand gestures and human-following using an AI-based and camera. </p>
-                    <p>▪ Developing user interface website-based for deploy the AI model and control the system.</p>
-                    <hr>
-                    <h5>Kasya (Kata Isyarat) Project – Online</h5>
-                    <h6>AI Engineer</h6>
-                    <p>▪ Kasya (kata isyarat) is project to develop software AI web-based for translating Indonesian sign language (Bisindo) in real-time.</p>
-                    <p>▪ Responsible for developing AI model using pretrain model for recognize the sign language, create datasets, and deploy on website.</p>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
-    <section id="project" class="project container">
-        <!-- <div class="row d-flex align-items-center gap-5">
-            <div class="col-12 col-md-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, iure fuga necessitatibus hic corrupti, minima vel rem maiores blanditiis rerum asperiores eius ex nam, reiciendis sequi inventore quaerat animi dolorem quia perspiciatis similique cum magni tempora quae. Earum alias saepe vero cum ab porro dignissimos ut assumenda voluptatum corrupti? Architecto.</p>
+    <section id="project" class="project">
+        <div class="container position-relative">
+            <div class="project-header">
+                <div>
+                    <h1 class="judul">Projects</h1>
+                    <h5>I have worked on several projects related to web development, artificial intelligence, etc.</h5>
+                </div>
+                <a href="all_projects.html" class="btn button">See More</a>
             </div>
-            <div class="col-12 col-md-6 project-img">
-                <div id="project-1" class="project-img-item">
-                    <img src="images/work-1.png" alt="project 1">
+            <div class="project-detail">
+                <a class="project-detail-item" href="simkopdes.html">
+                    <img class="image-container logo-contain" src="images/simkopdes/simkopdes-logo.png" alt="Simkopdes image">
+                    <h2>Simkopdes</h2>
+                    <p>Centralized digital platform designed to streamline administration, financial operations, and
+                        membership management for cooperatives.</p>
+                </a>
+
+                <a class="project-detail-item" href="savi.html">
+                    <img class="image-container" src="images/savi/savi.jpg" alt="SAVI Robot image">
+                    <h2>SAVI Robot</h2>
+                    <p>The SAVI (smart vehicle) robot is a robot that can navigate and help humans carry items.</p>
+                </a>
+
+                <a class="project-detail-item" href="kasya.html">
+                    <img class="image-container" src="images/kasya/18.png" alt="Kasya image">
+                    <h2>Kasya</h2>
+                    <p>Kasya (kata isyarat) is project to develop software AI web-based for translating Indonesian sign
+                        language (Bisindo) in real-time.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+        <div class="container position-relative">
+            <h1 class="judul">My Skills</h1>
+            <div class="skill-detail">
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/html.png" alt="">
+                    <p>HTML</p>
                 </div>
-                <div id="project-2" class="project-img-item">
-                    <img src="images/work-2.png" alt="project 2">
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/css.png" alt="">
+                    <p>CSS</p>
                 </div>
-                <div id="project-3" class="project-img-item">
-                    <img src="images/work-3.png" alt="project 3">
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/js.png" alt="">
+                    <p>JS</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/python.png" alt="">
+                    <p>Python</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/mysql.png" alt="">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/laravel.png" alt="">
+                    <p>Laravel</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/arduino.png" alt="">
+                    <p>Arduino</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/tensorflow.png" alt="">
+                    <p>Tensorflow</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/c.png" alt="">
+                    <p>C</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/bootstrap.png" alt="">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/matlab.png" alt="">
+                    <p>Matlab</p>
+                </div>
+                <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
+                    <img src="images/skill/flask.png" alt="">
+                    <p>Flask</p>
                 </div>
             </div>
-        </div> -->
-        <div class="project-header">
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container position-relative">
+            <h1 class="judul">My Gallery</h1>
+
+            <h3>Activity</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/1.jpg" alt="Internship 1">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/2.jpg" alt="Savi Demo">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/3.jpg" alt="Internship 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/4.jpg" alt="Organizations">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/5.png" alt="Circuit Diagram">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/gallery/1372524.jpg" alt="MSIB Program">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificate" class="certificate-section">
+        <div class="container">
+            <h3 class="certificate">Certificate</h3>
+
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <img src="images/certificate/mysql.png" alt="Image 1" class="slide">
+                    <img src="images/certificate/fe.png" alt="Image 2" class="slide">
+                    <img src="images/certificate/laravel.png" alt="Image 3" class="slide">
+                    <img src="images/certificate/ps.png" alt="Image 4" class="slide">
+                    <img src="images/certificate/ui.png" alt="Image 5" class="slide">
+                    <img src="images/certificate/orbit.png" alt="Image 6" class="slide">
+                    <img src="images/certificate/ted.png" alt="Image 7" class="slide">
+                    <img src="images/certificate/ed.png" alt="Image 8" class="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container position-relative">
+            <h1 class="judul">Contact</h1>
+            <div class="row d-flex align-items-center gap-5">
+                <div class="col-12 col-lg-7">
+                    <h2>Let's have a talk!</h2>
+                    <div class="row contact-detail">
+                        <a class="lk col-12 col-sm-4 d-flex align-items-center"
+                            href="https://www.linkedin.com/in/zaki-maulana-rabbani-07567b198/">
+                            <img class="w-17 w-sm-25" src="images/linkedin.svg" alt="linkedin icon">
+                            <p class="mb-0 ms-3 ms-sm-2">Zaki Maulana Rabbani</p>
+                        </a>
+                        <a class="ig col-12 col-sm-4 d-flex align-items-center"
+                            href="https://www.instagram.com/zmrabbani/">
+                            <img class="w-15 w-sm-25" src="images/Instagram.svg" alt="instagram icon">
+                            <p class="mb-0 ms-2">@zmrabbani</p>
+                        </a>
+                        <a class="tw col-12 col-sm-4 d-flex align-items-center"
+                            href="https://x.com/zmrabbani?t=e8QjNjl9v_H84E_CCd_zNA&s=09">
+                            <img class="w-15 w-sm-25" src="images/Twitter.svg" alt="twitter icon">
+                            <p class="mb-0 ms-2">@zmrabbani</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
             <div>
-                <h1 class="judul">Projects</h1>
-                <h5>I have worked on several projects related to web development, artificial intelligence, etc.</h5>
+                <h1>ZMR</h1>
             </div>
-            <a href="/portfolio/all_projects.html" class="btn button">See More</a>
-        </div>
-        <div class="project-detail">
-            <a class="project-detail-item" href="/portfolio/savi.html">
-                <img class="image-container" src="images/savi/savi.jpg" alt="service 1 image">
-                <h2>SAVI Robot</h2>
-                <p>The SAVI (smart vehicle) robot is a robot that can navigate and help humans carry items.</p>
-            </a>
-
-            <a class="project-detail-item" href="/portfolio/kasya.html">
-                <img class="image-container" src="images/kasya/18.png" alt="service 2 image">
-                <h2>Kasya</h2>
-                <p>Kasya (kata isyarat) is project to develop software AI web-based for translating Indonesian sign language (Bisindo) in real-time.</p>
-            </a>
-
-            <a class="project-detail-item" href="/portfolio/ecommerce.html">
-                <img class="image-container" src="images/ecommerce/1.jpg" alt="service 3 image">
-                <h2>Ecommerce</h2>
-                <p>Simple Ecommerce website using Laravel 9 as the framework.</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="skill" class="skill container">
-        <h1 class="judul">My Skills</h1>
-        <div class="skill-detail">
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/html.png" alt="">
-                <p>HTML</p>
+            <div class="copyright">
+                <p>©2026 Zaki Maulana Rabbani</p>
             </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/css.png" alt="">
-                <p>CSS</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/js.png" alt="">
-                <p>JS</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/python.png" alt="">
-                <p>Python</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/mysql.png" alt="">
-                <p>MySQL</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/laravel.png" alt="">
-                <p>Laravel</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/arduino.png" alt="">
-                <p>Arduino</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/tensorflow.png" alt="">
-                <p>Tensorflow</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/c.png" alt="">
-                <p>C</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/bootstrap.png" alt="">
-                <p>Bootstrap</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/matlab.png" alt="">
-                <p>Matlab</p>
-            </div>
-            <div class="skill-detail-item fw-bold d-flex justify-content-between px-4">
-                <img src="images/skill/flask.png" alt="">
-                <p>Flask</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="gallery container">
-        <h1 class="judul">My Gallery</h1>
-
-        <h3>Activity</h3>
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/1.jpg" alt="Internship 1">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/2.jpg" alt="Savi Demo">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/3.jpg" alt="Internship 2">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/4.jpg" alt="Organizations">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/5.png" alt="Circuit Diagram">
-        </div>
-
-        <div class="gallery-item">
-            <img class="gallery-image" src="images/gallery/1372524.jpg" alt="MSIB Program">
-        </div>
-    
-    </section>
-
-    <div class="container">
-        <h3 class="certificate">Certificate</h3>
-
-        <div class="slideshow-container">
-            <div class="slideshow">
-                <img src="images/certificate/mysql.png" alt="Image 1" class="slide">
-                <img src="images/certificate/fe.png" alt="Image 2" class="slide">
-                <img src="images/certificate/laravel.png" alt="Image 3" class="slide">
-                <img src="images/certificate/ps.png" alt="Image 4" class="slide">
-                <img src="images/certificate/ui.png" alt="Image 5" class="slide">
-                <img src="images/certificate/orbit.png" alt="Image 6" class="slide">
-                <img src="images/certificate/ted.png" alt="Image 7" class="slide">
-                <img src="images/certificate/ed.png" alt="Image 8" class="slide">
-            </div>
-        </div>
-
-    </div>
-
-    <section id="contact" class="contact container">
-        <h1 class="judul">Contact</h1>
-        <div class="row d-flex align-items-center gap-5">
-            <div class="col-12 col-lg-7">
-                <h2>Let's have a talk!</h2>
-                <div class="row contact-detail">
-                    <a class="lk col-12 col-sm-4 d-flex align-items-center" href="https://www.linkedin.com/in/zaki-maulana-rabbani-07567b198/">
-                        <img class="w-17 w-sm-25" src="images/linkedin.svg" alt="linkedin icon">
-                        <p class="mb-0 ms-3 ms-sm-2">Zaki Maulana Rabbani</p>
-                    </a>
-                    <a class="ig col-12 col-sm-4 d-flex align-items-center" href="https://www.instagram.com/zmrabbani/">
-                        <img class="w-15 w-sm-25" src="images/Instagram.svg" alt="instagram icon">
-                        <p class="mb-0 ms-2">@zmrabbani</p>
-                    </a>
-                    <a class="tw col-12 col-sm-4 d-flex align-items-center" href="https://x.com/zmrabbani?t=e8QjNjl9v_H84E_CCd_zNA&s=09">
-                        <img class="w-15 w-sm-25" src="images/Twitter.svg" alt="twitter icon">
-                        <p class="mb-0 ms-2">@zmrabbani</p>
-                    </a>
-                </div>
-            </div>
-            <!-- <div class="col-12 col-lg-5">
-                <form class="contact-form" onsubmit="onFormSubmit(event)">
-                    <div class="mb-3">
-                        <label for="inp_email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="inp_email" aria-describedby="emailHelp" placeholder="example@email.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inp_subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inp_message" class="form-label">Message</label>
-                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
-                    </div>
-                    <div class="d-flex justify-content-center mt-5">
-                        <button type="submit" class="btn button">Submit</button>
-                    </div>
-                  </form>
-            </div> -->
-        </div>
-    </section>
-
-    <footer id="footer" class="footer container">
-        <div>
-            <h1>ZMR</h1>
-        </div>
-        <div class="copyright">
-            <p>©2024 Zaki Maulana Rabbani</p>
         </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
